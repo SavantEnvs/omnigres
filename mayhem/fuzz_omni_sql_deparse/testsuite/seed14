@@ -1,0 +1,1 @@
+select case when a then 1 else 2 end, cast(x as text), y::int[], z[1]

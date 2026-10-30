@@ -1,0 +1,9 @@
+project: savantenvs/omnigres
+target: fuzz_omni_web_codec
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_omni_web_codec/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_omni_web_codec
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_omni_web_codec/fuzz_omni_web_codec.dict

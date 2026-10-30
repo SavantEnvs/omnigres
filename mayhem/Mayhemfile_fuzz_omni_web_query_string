@@ -1,0 +1,9 @@
+project: savantenvs/omnigres
+target: fuzz_omni_web_query_string
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_omni_web_query_string/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_omni_web_query_string
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_omni_web_query_string/fuzz_omni_web_query_string.dict

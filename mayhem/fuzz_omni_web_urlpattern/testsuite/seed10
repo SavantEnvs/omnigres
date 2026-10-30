@@ -1,0 +1,2 @@
+http{s}?://:sub.example.com/*
+https://www.example.com/index.html

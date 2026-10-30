@@ -1,0 +1,1 @@
+create trigger tg before insert on t for each row execute function f()

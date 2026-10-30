@@ -1,0 +1,1 @@
+alter table t add column c int check (c > 0), drop column d

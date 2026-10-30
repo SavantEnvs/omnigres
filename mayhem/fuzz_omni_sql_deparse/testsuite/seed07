@@ -1,0 +1,1 @@
+create table t (id serial primary key, name text not null default '', v jsonb)

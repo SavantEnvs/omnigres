@@ -1,0 +1,9 @@
+project: savantenvs/omnigres
+target: fuzz_omni_sql_deparse
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_omni_sql_deparse/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_omni_sql_deparse
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_omni_sql_deparse/fuzz_omni_sql_deparse.dict

@@ -1,0 +1,1 @@
+select 'a' || 'b', 1 between 2 and 3, null is distinct from 1

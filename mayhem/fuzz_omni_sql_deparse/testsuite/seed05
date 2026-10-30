@@ -1,0 +1,1 @@
+delete from t using u where t.id = u.id and u.flag

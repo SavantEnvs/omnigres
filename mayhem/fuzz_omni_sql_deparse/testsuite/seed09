@@ -1,0 +1,1 @@
+select a, count(*) over (partition by b order by c) from t group by a having count(*) > 1

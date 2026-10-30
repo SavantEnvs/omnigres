@@ -1,0 +1,1 @@
+copy t from stdin with (format csv)
